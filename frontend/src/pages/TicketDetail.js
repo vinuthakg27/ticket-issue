@@ -14,7 +14,7 @@ function TicketDetail() {
 
 
   const loadTicket = async () => {
-    const res = await axios.get('https://ticket-issue.onrender.com/api/tickets', {
+    const res = await axios.get('http://localhost:5000/api/tickets/', {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     });
     const current = res.data.find(t => t.id === parseInt(id));
