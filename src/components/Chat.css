@@ -1,0 +1,21 @@
+.chat-message {
+  max-width: 70%;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  clear: both;
+}
+
+.chat-message.sent {
+  background-color: #007bff;
+  color: white;
+  float: right;
+  text-align: right;
+}
+
+.chat-message.received {
+  background-color: #e5e5ea;
+  color: black;
+  float: left;
+  text-align: left;
+}
